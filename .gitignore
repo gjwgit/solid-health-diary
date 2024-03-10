@@ -1,3 +1,16 @@
+########################################################################
+# Additional ignores for anusii
+
+*~
+solidpod
+backup
+generated*
+Generated*
+.vscode
+
+########################################################################
+# This is the default github gitignore
+
 # See https://www.dartlang.org/guides/libraries/private-files
 
 # Files and directories created by pub
@@ -6,7 +19,7 @@
 build/
 # If you're building an application, you may want to check-in your pubspec.lock
 pubspec.lock
-
+coverage/
 # Directory created by dartdoc
 # If you don't generate documentation locally you can remove this line.
 doc/api/
@@ -25,3 +38,61 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+
+########################################################################
+# This is the default flutter gitignore file
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ignore automatic changes in macos folder
+/macos/Flutter/*
+/macos/Podfile
+/macos/Podfile.lock
+/macos/Runner.xcodeproj/project.pbxproj
+/macos/Runner.xcworkspace/contents.xcworkspacedata
+
+# ignore automatic changes in ios folder
+/ios/Flutter/*
+/ios/Podfile
